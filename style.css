@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Fredoka", sans-serif;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background: rgb(15, 14, 14);
+}
+
+#box {
+	background-image: url("./imgee.jpeg");
+	width: 330px;
+	height: 480px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	position: relative;
+	cursor: pointer;
+	transition: box-shadow 0.1s, transform 0.1s;
+}
+#box:hover {
+	box-shadow: 0 0 10px 5px rgb(128, 125, 125);
+}
+#overlay {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(255, 255, 255, 0.2);
+	background: radial-gradient(
+		circle,
+		rgba(255, 255, 255, 0.2) 0%,
+		rgba(0, 0, 0, 0.6) 100%
+	);
+}
